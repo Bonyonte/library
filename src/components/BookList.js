@@ -15,13 +15,13 @@ const BookList = () => {
     //console.log(books);
   return (
     <div className="book-list">{books.map((book) =>{
-      // return <Book title={book.title} 
-      // author={book.author} 
-      // image={book.imgUrl} 
-      // price={book.price} 
-      // review={book.review} 
-      // description={book.description} 
-      // source={book.source} key={book.id}/>
+      return <Book title={book.title} 
+      author={book.author} 
+      image={book.imgUrl} 
+      price={book.price} 
+      review={book.review} 
+      description={book.description} 
+      source={book.source} key={book.id}/>
     })}</div>
   )
 }
