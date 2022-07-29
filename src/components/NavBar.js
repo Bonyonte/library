@@ -1,11 +1,14 @@
 import React from 'react';
-import '../App'
+import '../App';
+import image1 from '../images/image1.jpeg';
+import {Link} from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <div className="navbar">
-        <div><h1>React Books App</h1></div>
-        <div>Your Favorites</div>
+        {/* <Link to='/'>Home</Link>
+        <Link to='/library'>Library</Link>
+        <Link to='/comment'>Comment</Link> */}
     </div>
   );
 };

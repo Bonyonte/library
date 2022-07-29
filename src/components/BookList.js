@@ -1,23 +1,28 @@
 import React, { useState, useEffect} from 'react';
 import '../App';
-import {API_URL} from '../API';
-import axios from 'axios';
+import Book from './Book';
 
 const BookList = () => {
 
     const [books, setBooks] = useState([])
 
     useEffect(() => {
-        axios.get(API_URL)
-        .then(r =>{
-            console.log(r.data)
-            setBooks(r.data)
-        })
-        .catch(err => cosole.log(err));
+        fetch('http://localhost:3000/Books')
+        .then(r =>r.json())
+        .then((data) => setBooks(data))
         
-    }, [])
+    },[])
+    //console.log(books);
   return (
-    <div className="book-list">BookList</div>
+    <div className="book-list">{books.map((book) =>{
+      // return <Book title={book.title} 
+      // author={book.author} 
+      // image={book.imgUrl} 
+      // price={book.price} 
+      // review={book.review} 
+      // description={book.description} 
+      // source={book.source} key={book.id}/>
+    })}</div>
   )
 }
 

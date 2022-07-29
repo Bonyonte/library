@@ -9,11 +9,11 @@ import Favorites from './components/Favorites';
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <NavBar /> 
       <Routes>
         <Route path="/" element={<BookList />} />
-        <Route path="/book/:id" element={<BookDetails />} />
-        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/library" element={<BookDetails />} />
+        <Route path="/comment" element={<Favorites />} />
       </Routes>
       <Footer />
     </div>
