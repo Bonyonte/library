@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App';
-import image1 from '../images/image1.jpeg';
 import {Link} from 'react-router-dom';
 
 const NavBar = () => {
