@@ -69,3 +69,17 @@
   color: white;
   position: absolute;
 }
+
+.comment-form {
+  border: solid black 1px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form > input,
+.comment-form > textarea {
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+}

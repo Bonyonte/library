@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Library from './components/Library';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import Favorites from './components/Favorites';
+import Comment from './components/Comment';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/library" element={<Library />} />
-        <Route path="/comment" element={<Favorites />} />
+        <Route path="/comment" element={<Comment />} />
       </Routes>
       <Footer />
     </div>
