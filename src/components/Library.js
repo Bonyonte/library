@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import '../App';
 import Book from './Book';
 
-const BookList = () => {
+const Library = () => {
 
     const [books, setBooks] = useState([])
 
@@ -26,4 +26,4 @@ const BookList = () => {
   )
 }
 
-export default BookList;
+export default Library;

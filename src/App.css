@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
  box-sizing: border-box;
  padding: 0;
  margin: 0; 
+ font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -52,4 +54,18 @@
 
 .author{
   font-size: 25px;
+}
+
+.row1 h1{
+  font-size: 3rem;
+  padding-top: 150px;
+  color: white;
+}
+
+.row2{
+  right: 150px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  position: absolute;
 }
