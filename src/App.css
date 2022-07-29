@@ -12,6 +12,11 @@
   display:flex;
   align-items: center;
   justify-content: space-evenly;
+  position:fixed;
+  width: 100%;
+  top:0;
+  bottom: 0;
+  
 }
 
 .footer {
@@ -39,4 +44,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.book{
+  margin-top: 50px;
+}
+
+.author{
+  font-size: 25px;
 }
