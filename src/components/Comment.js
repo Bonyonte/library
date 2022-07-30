@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../App';
 
 function Comment () {
-const [commentData, setCommentData] = useState({
-  title: "",
-  author: "",
-  comment: "",
-})
+// const [commentData, setCommentData] = useState({
+//   title: "",
+//   author: "",
+//   comment: "",
+// })
   return (
     <div className="comment">
       <form  className="new-comment-form">
