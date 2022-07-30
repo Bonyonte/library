@@ -11,7 +11,7 @@ const Home = () => {
             <h2>Find your book</h2>
             <div className="search">
                 <input type="text" placeholder="Enter Your Book Name" />
-                <button><i class="fa-regular fa-magnifying-glass"></i></button>
+                <button><i class="fas fa-search"></i></button>
             </div>
         </div>
     </div>

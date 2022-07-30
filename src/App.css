@@ -70,16 +70,75 @@
   position: absolute;
 }
 
-.comment-form {
+.search{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.search input{
+  outline: 0;
+  border: 0;
+  width: 350px;
+  height:35px;
+  padding: 0 0.5rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.search button{
+  outline: none;
+  border: none;
+  height: 35px;
+  padding: 0 0.5rem;
+}
+
+.book img{
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem 1rem 0 0;
+}
+.new-comment-form {
   border: solid black 1px;
   padding: 1em;
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
+  height: 100vh;
 }
 
-.comment-form > input,
-.comment-form > textarea {
+.new-comment-form > input,
+.new-comment-form > textarea {
   font-size: 1em;
   font-family: sans-serif;
   margin-bottom: 0.5em;
+}
+
+input[type="submit"],
+button {
+  font-weight: bold;
+  font-size: 1em;
+  background: #04e8ff;
+  border: solid black 1px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.sidebar {
+  min-height: 100vh;
+  min-width: 12em;
+  width: 28%;
+  border-right: solid black 1px;
+  background: #e5fdff;
+  padding: 1em;
+}
+
+.comment{
+  display: flex;
+  flex-direction: row;
+  padding-top:100px;
+}
+
+.sidebar > button {
+  width: 100%;
 }
