@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "preinstall": "npx npm-force-resolutions",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "server": "json-server --watch db.json --port 3000",
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.10"
   }
 }

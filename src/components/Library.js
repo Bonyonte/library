@@ -23,20 +23,28 @@ const Library = () => {
         //.catch(err => console.log(err));
       }
     }
+
+    const handleOnSearch =(e) => {
+      setSearch(e.target.value)
+    }
+
+      const filterBooks = books.filter((book) => book.title.includes(search))
     //console.log(books);
+
+      const titles = books.map((book) => book.title)
   return (
     <>
     <div className="row2">
             <h2>Find your book</h2>
             <div className="search">
                 <input type="text" placeholder="Enter Your Book Name" 
-               value={search} onChange={e=>setSearch(e.target.value)}
+               value={search} onChange={handleOnSearch}
                onKeyPress={searchBook}
                />
                {/* <button>< SearchIcon /></button> */}
             </div>
         </div>
-    <div className="book-list">{books.map((book) =>{
+    <div className="book-list">{filterBooks.map((book) =>{
       return <Book title={book.title} 
       author={book.author} 
       image={book.imgUrl} 
