@@ -115,10 +115,9 @@
 .new-comment-form {
   border: solid black 1px;
   padding: 1em;
-  display: flex;
-  flex-direction: column;
   padding-top: 100px;
   height: 100vh;
+  width: 60%;
 }
 
 .new-comment-form > input,
@@ -140,17 +139,16 @@ button {
 
 .sidebar {
   min-height: 100vh;
-  min-width: 12em;
-  width: 28%;
   border-right: solid black 1px;
   background: #e5fdff;
-  padding: 1em;
+  width: 100%;
 }
 
 .comment{
   display: flex;
   flex-direction: row;
   padding-top:100px;
+  justify-content:space-between;
 }
 
 .sidebar > button {

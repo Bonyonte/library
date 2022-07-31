@@ -2,28 +2,33 @@ import React, {useState, useEffect} from 'react';
 import '../App';
 
 function Comment () {
+  const [commentData, setCommentData] = useState({
+    title: "",
+    name: "",
+    comment: "",
+  })
+
+  function handleChange(e){
+    setCommentData({...commentData, [e.target.name]: e.target.value})
+  }
 
 useEffect(()=>{
   fetch('http://localhost:3000/Comments')
   .then(res=> res.json())
-  .then(data=>console.log(data));
+  .then(data=>setCommentData(data));
 }, []);
 
-// const [commentData, setCommentData] = useState({
-//   title: "",
-//   author: "",
-//   comment: "",
-// })
+console.log(commentData)
   return (
     <div className="comment">
       <form  className="new-comment-form">
-          <input  name="title" placeholder="Title" />
-          <input name="author" placeholder="Author" />
-          <textarea  name="content" placeholder="Write your comment here..." rows={10} />
+          <input onChange={handleChange} value={commentData.title} name="title" placeholder="Title" /><br/>
+          <input onChange={handleChange} value={commentData.author} name="name" placeholder="Name" /><br/>
+          <textarea  onChange={handleChange} value={commentData.content} name="content" placeholder="Write your comment here..." rows={10} /><br/>
           <input type="submit" value="Share your comment" />
       </form>
       <div className="sidebar">
-        <button>new comment form</button>
+        {/* {commentData.title} */}
       </div>
     </div>
   )
