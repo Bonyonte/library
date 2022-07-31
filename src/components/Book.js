@@ -16,7 +16,7 @@ function Book({author, image, title, description, price, review, source}) {
         <button className="bookButton" onClick={handleClick}>Details</button>
         { actualDetails?
           <div>
-          <h2><span>Title:</span> {title}</h2>
+          <h4><span>Title:</span> {title}</h4>
           <p><span>Description: </span>{description}</p>
           <p><strong>Price: {price}</strong></p>
           <p><span>Review:</span>{review}</p>

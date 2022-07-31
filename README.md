@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+LIBRARY WEBSITE By -Godfrey Magogo Bonyonte
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Screenshot
 
-## Available Scripts
+![images](/src/images/Screenshot%20from%202022-07-31%2020-17-39.png)
+![images](/src/images/Screenshot%20from%202022-07-31%2020-17-47.png)
+![images](/src/images/Screenshot%20from%202022-07-31%2020-17-52.png)
+![images](/src/images/Screenshot%20from%202022-07-31%2020-17-57.png)
+![images](/src/images/Screenshot%20from%202022-07-31%2020-18-25.png)
+![images](/src/images/Screenshot%20from%202022-07-31%2020-18-50.png)
 
-In the project directory, you can run:
+Table Of Content
 
-### `npm start`
+-Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Requirements
 
-### `npm test`
+-Tecnology Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Live Link
 
-### `npm run build`
+-Licence
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Author's Info
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Description This platform helps people who are eager to study further by doing research in other books, it helps them illigerdless of the geographical location by visiting the website and see different book prices and the discription of each to have a clue of what is entailed and plan to buy.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Features
 
-### `npm run eject`
+As a user of this programm you will be able to :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+See a library home page.
+See a nav bar that has different components.
+By clicking the library component, you will be able to see diffent books and a form for searching a book whereby you can search your book.
+Also by clicking the details button, you can see a book details.
+The comment component in the nav bar will allow you to leave a comment on a certain book.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Requirement
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Access to a computer Access to internet A VS Code editor Clone to your computer and run NPM JSON SERVER and NPM START
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Technology Used
 
-## Learn More
+HTML - Which was used to develop the structure of the page. 
+CSS - Which was used to style the user interface. 
+ReactJs- Which was used to make the page interactive.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Live Link -Clink this link to view the live application https://bonyonte.github.io/phase1-project/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+LIcence
 
-### Code Splitting
+MIT License Copyright (c) [2019] [Godfrey Bonyonte] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Author's Info Email - godfrey.magogo@student.moringaschool.com
