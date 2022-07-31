@@ -11,16 +11,16 @@ function Book({author, image, title, description, price, review, source}) {
 //console.log(book);
   return (
     <div className="book">
-        <h4 className="author">{author}</h4>
+        <h4 className="author">Author: {author}</h4>
         <img src={image} alt="book" />
         <button className="bookButton" onClick={handleClick}>Details</button>
         { actualDetails?
           <div>
-          <p>{title}</p>
-          <p>{description}</p>
-          <p>{price}</p>
-          <p>{review}</p>
-          <p>{source}</p>
+          <p>Title: {title}</p>
+          <p>Description: {description}</p>
+          <p>Price: {price}</p>
+          <p>Review:{review}</p>
+          <p>Source: {source}</p>
         </div>
         :null
         }
