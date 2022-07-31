@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../App';
 
 function Comment () {
+
+useEffect(()=>{
+  fetch('http://localhost:3000/Comments')
+  .then(res=> res.json())
+  .then(data=>console.log(data));
+}, []);
+
 // const [commentData, setCommentData] = useState({
 //   title: "",
 //   author: "",
