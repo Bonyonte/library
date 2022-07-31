@@ -12,6 +12,22 @@ function Comment () {
     setCommentData({...commentData, [e.target.name]: e.target.value})
   }
 
+  function handleSubmit (e){
+    e.preventDefault();
+    const comment = commentData
+    fetch('http://localhost:3000/Comments',{
+      method:'POST',
+      headers:{
+        "Content-Type":"application/json",
+      },
+      body: JSON.stringify(commentData)
+    }
+    .then((res) => res.json())
+    .then(data => setCommentData(data))
+    )
+    
+  }
+
 useEffect(()=>{
   fetch('http://localhost:3000/Comments')
   .then(res=> res.json())
@@ -25,7 +41,7 @@ console.log(commentData)
           <input onChange={handleChange} value={commentData.title} name="title" placeholder="Title" /><br/>
           <input onChange={handleChange} value={commentData.author} name="name" placeholder="Name" /><br/>
           <textarea  onChange={handleChange} value={commentData.content} name="content" placeholder="Write your comment here..." rows={10} /><br/>
-          <input type="submit" value="Share your comment" />
+          <input onSubmit={handleSubmit} type="submit" value="Share your comment" />
       </form>
       <div className="sidebar">
         {/* {commentData.title} */}
