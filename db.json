@@ -370,5 +370,14 @@
       "description": "JavaScript in easy steps, 6th edition instructs the user how to create exciting web pages that employ the power of JavaScript to provide functionality. You need have no previous knowledge of any scripting language so it's ideal for the newcomer to JavaScript. By the end of this book you will have gained a sound understanding of JavaScript and be able to add exciting dynamic scripts to your own web pages. ",
       "source": "www.amazon.co.uk"
     }
-  ]
+    ],
+    "Comments": [
+      {
+        "Id": 1,
+        "Title": "JavaScript in easy steps, 6th edition",
+        "Name": "Godfrey",
+        "Review": "4.4 out of 5 starts",
+        "Content": "Is an awesome book"
+      }
+    ]
 }
