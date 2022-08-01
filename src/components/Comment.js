@@ -1,53 +1,34 @@
 import React, {useState, useEffect} from 'react';
 import '../App';
+import CommentForm from './CommentForm';
+
 
 function Comment () {
-  const [commentData, setCommentData] = useState({
-    title: "",
-    name: "",
-    comment: "",
-  })
-
-  function handleChange(e){
-    setCommentData({...commentData, [e.target.name]: e.target.value})
-  }
-
-  function handleSubmit (e){
-    e.preventDefault();
-    const comment = commentData
-    fetch('http://localhost:3000/Comments',{
-      method:'POST',
-      headers:{
-        "Content-Type":"application/json",
-      },
-      body: JSON.stringify(commentData)
-    }
-    .then((res) => res.json())
-    .then(data => setCommentData(data))
-    )
-    
-  }
-
+  const [comments, setComments] = useState([])
 useEffect(()=>{
   fetch('http://localhost:3000/Comments')
   .then(res=> res.json())
-  .then(data=>setCommentData(data));
+  .then(data=>setComments(data));
 }, []);
 
-console.log(commentData)
+function handleAddComment(addNewComment){
+  setComments([...comments, addNewComment])
+}
+
+//console.log(comments)
   return (
-    <div className="comment">
-      <form  className="new-comment-form">
-          <input onChange={handleChange} value={commentData.title} name="title" placeholder="Title" /><br/>
-          <input onChange={handleChange} value={commentData.author} name="name" placeholder="Name" /><br/>
-          <textarea  onChange={handleChange} value={commentData.content} name="content" placeholder="Write your comment here..." rows={10} /><br/>
-          <input onSubmit={handleSubmit} type="submit" value="Share your comment" />
-      </form>
-      <div className="sidebar">
-        {/* {commentData.title} */}
+    <div style={{display: "flex", justifyContent: "space-around" , paddingTop: "130px"}}>
+    <CommentForm onAddComment={handleAddComment} />
+    {comments.map((comment, i) =>{
+        return<div key={i}>
+        <h4>{comment.Title}</h4>
+        <h4>{comment.Name}</h4>
+        <h4>{comment.Content}</h4>
       </div>
+    })}
     </div>
   )
+  
 }
 
 export default Comment;
