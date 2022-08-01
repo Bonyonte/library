@@ -47,7 +47,7 @@ HTML - Which was used to develop the structure of the page.
 CSS - Which was used to style the user interface. 
 ReactJs- Which was used to make the page interactive.
 
-Live Link -Clink this link to view the live application 
+Live Link -Clink this link to view the live application https://library-ten-swart.vercel.app/library
 
 LIcence
 
